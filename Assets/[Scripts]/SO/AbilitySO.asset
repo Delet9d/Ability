@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b6591deaa11939439a23a5092d0cbd9, type: 3}
+  m_Name: AbilitySO
+  m_EditorClassIdentifier: 
+  AbilityType: 1
+  AbilityID: 0
+  AbilityEffectPolicy: 0
+  Amount: 0
+  EffectRadius: 0
+  ProjectilePrefab: {fileID: 5076424605294389219, guid: 455c910ed9c21b64d8e5f5142b3458fa, type: 3}
+  MultipleOverlaps: 1
+  LayerMasksToOverlap: []
+  LayerMasksToEnd: []
+  ExplosionInTheEnd: 1
+  ExplosionRadius: 0
+  Duration: 0
+  HasStacks: 0
+  MaxEffectStacks: 4
+  AbilityRemoveStackPolicy: 0
+  StackDuration: 1
+  CastingVelocityChange: 0
+  ActiveVelocityChange: 0
+  EntityRotationOnAbilityRelease: 0
+  EntityAngleOnAbilityRelease: 0
+  AnimationClip: {fileID: 7400000, guid: 5cffc851c1611454e85de780c9a056fe, type: 2}
+  VisualEffectRelease: {fileID: 339158821923109191, guid: 7b3e3f2bf16ccd244a4238acbcd92cec, type: 3}
+  VisualEffectHit: {fileID: 339158821923109191, guid: 7b3e3f2bf16ccd244a4238acbcd92cec, type: 3}
+  VisualEffectEnd: {fileID: 339158821923109191, guid: 7b3e3f2bf16ccd244a4238acbcd92cec, type: 3}
+  AnimationSoundRelease: {fileID: 0}
+  AnimationSoundHit: {fileID: 0}
+  AnimationSoundEnd: {fileID: 0}
