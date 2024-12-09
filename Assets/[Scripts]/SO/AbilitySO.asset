@@ -18,11 +18,12 @@ MonoBehaviour:
   Amount: 0
   EffectRadius: 0
   ProjectilePrefab: {fileID: 5076424605294389219, guid: 455c910ed9c21b64d8e5f5142b3458fa, type: 3}
-  MultipleOverlaps: 1
+  MultipleOverlaps: 2
   LayerMasksToOverlap: []
   LayerMasksToEnd: []
   ExplosionInTheEnd: 1
-  ExplosionRadius: 0
+  ExplosionRadius: 5
+  ExplosionVFX: {fileID: 4638377481891691631, guid: 83ad694f134ab954580473212156b35a, type: 3}
   Duration: 0
   HasStacks: 0
   MaxEffectStacks: 4
@@ -30,8 +31,8 @@ MonoBehaviour:
   StackDuration: 1
   CastingVelocityChange: 0
   ActiveVelocityChange: 0
-  EntityRotationOnAbilityRelease: 0
-  EntityAngleOnAbilityRelease: 0
+  EntityRotationOnAbilityRelease: 1
+  EntityAngleOnAbilityRelease: 35.07
   AnimationClip: {fileID: 7400000, guid: 5cffc851c1611454e85de780c9a056fe, type: 2}
   VisualEffectRelease: {fileID: 339158821923109191, guid: 7b3e3f2bf16ccd244a4238acbcd92cec, type: 3}
   VisualEffectHit: {fileID: 339158821923109191, guid: 7b3e3f2bf16ccd244a4238acbcd92cec, type: 3}

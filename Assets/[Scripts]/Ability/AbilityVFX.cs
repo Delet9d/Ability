@@ -19,7 +19,6 @@ namespace _Scripts_.Ability
         
         public void PlayHitVFX(Vector3 Position)
         {
-            Debug.Log(Position);
             if (_AbilitySO.VisualEffectHit)
                 Instantiate(_AbilitySO.VisualEffectHit, Position, Quaternion.identity);
             else
@@ -29,7 +28,7 @@ namespace _Scripts_.Ability
         public void PlayEndVFX(Vector3 Position)
         {
             if(_AbilitySO.VisualEffectEnd)
-                Instantiate(_AbilitySO.VisualEffectEnd, Position, Quaternion.identity);
+                Instantiate(_AbilitySO.ExplosionVFX, Position, Quaternion.identity);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using _Scripts_.Interfaces;
 using UnityEngine;
@@ -19,7 +20,7 @@ namespace _Scripts_
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1))
+            if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 if(components[0].TryGetComponent(out IAbility ability))
                     ability.AbilityActivated(gameObject);
@@ -31,8 +32,11 @@ namespace _Scripts_
 
         public void AnimationSetuup()
         {
-            if(components[0].TryGetComponent(out AbilityController ability))
+            if (components[0].TryGetComponent(out AbilityController ability))
+            {
                 ability.AbilityStateFunc(EAbilityState.Release);
+            }
+                
             else
                 Debug.LogWarning("No ability activated");
         }

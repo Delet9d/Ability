@@ -36,8 +36,10 @@ public class AbilityController : MonoBehaviour, IAbility
         {
             case EAbilityState.Casting:
                 //AnimationStart
+                
                 break;
             case EAbilityState.Release:
+                _AbilityMovement.RotatePlayer();
                 _AbilityEffect.AbilityActivated(Player);
                 _AbilityVFX.PlayActivateVFX(Player.transform.position + new Vector3(0, 1f, 0));
                 //Sound Start
@@ -66,7 +68,6 @@ public class AbilityController : MonoBehaviour, IAbility
 
     private void AbilityEffectOnOnHitEvent()
     {
-        Debug.Log("HitHitVFx ");
         if(_AbilitySO.AbilityType == EAbilityType.Ranged)
             _AbilityVFX.PlayHitVFX(Projectile.transform.position);
     }
@@ -76,7 +77,7 @@ public class AbilityController : MonoBehaviour, IAbility
         Player = player;
         _AbilityEntityData.Initialization(_AbilitySO);
         _AbilityEffect.Initialization(_AbilitySO);
-        _AbilityMovement.Initialization(_AbilitySO);
+        _AbilityMovement.Initialization(_AbilitySO, Player.transform);
         _AbilitySound.Initialization(_AbilitySO);
         _AbilityVFX.Initialization(_AbilitySO);
         _AbilityAnimation.Initialization(_AbilitySO, Player);

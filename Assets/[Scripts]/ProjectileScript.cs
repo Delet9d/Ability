@@ -28,10 +28,14 @@ public class ProjectileScript : MonoBehaviour
     {
         if (other.TryGetComponent(out IHitTarget target))
         {
-            OnHit?.Invoke(other.gameObject);
+            
             Overlaps--;
             if(Overlaps <= 0)
                 Destroy(gameObject);
+            else
+            {
+                OnHit?.Invoke(other.gameObject);
+            }
         }
 
         if (DestroyLayers.Contains(other.gameObject.layer))

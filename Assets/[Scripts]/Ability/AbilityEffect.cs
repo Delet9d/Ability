@@ -91,6 +91,7 @@ namespace _Scripts_.Ability
                     element.ApplyEffect(_AbilitySO);
                 }
             }
+            
             OnDestroyEvent?.Invoke();
         }
     }
